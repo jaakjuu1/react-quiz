@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "Are you considered to be a medium to large enterprise according to the definition Commission Recommendation 2003/361/EC (for example, employ more than 50 people, enjoy a turnover and/or annual balance sheet total of more than 10 million Euros)?",
+      "options": [
+        { "text": "Yes", "nextQuestion": 2 },
+        { "text": "No", "nextQuestion": 2 }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Are you currently defined as a critical entity, based on the EU Directive on the resilience of critical entities (CER)?",
+      "options": [
+        { "text": "Yes", "nextQuestion": 3 },
+        { "text": "No", "nextQuestion": 3 }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Do you provide any of the following services?",
+      "options": [
+        { "text": "Trust services covered by Regulation (EU) No 910/2014 ('eIDAS Regulation')", "result": "NIS2 applies to you" },
+        { "text": "Data center services", "result": "NIS2 applies to you" },
+        { "text": "Manufacturing of basic pharmaceutical products and pharmaceutical preparations", "result": "NIS2 applies to you" },
+        { "text": "Top-level-domain (TLD) name servers and related services", "result": "NIS2 applies to you" },
+        { "text": "Services in the postal delivery chain", "result": "NIS2 applies to you" },
+        { "text": "Public electronic communications networks or services", "result": "NIS2 applies to you" },
+        { "text": "None of the above", "nextQuestion": 4 }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Are you part of any of the following industries?",
+      "options": [
+        { "text": "Manufacturing of goods such as medical devices, machinery and motor vehicles", "result": "NIS2 applies to you" },
+        { "text": "Aviation", "result": "NIS2 applies to you" },
+        { "text": "Financial sector (bank, insurance, investment)", "result": "NIS2 applies to you" },
+        { "text": "Healthcare", "result": "NIS2 applies to you" },
+        { "text": "None of the above", "result": "NIS2 doesn't apply to you" }
+      ]
+    }
+  ]
+}

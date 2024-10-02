@@ -1,0 +1,35 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  @apply bg-gray-100 flex items-center justify-center min-h-screen;
+}
+
+.app {
+  @apply bg-white p-8 rounded-lg shadow-md max-w-md w-full;
+}
+
+.score-section {
+  @apply text-2xl font-bold text-center;
+}
+
+.question-section {
+  @apply mb-6;
+}
+
+.question-count {
+  @apply text-lg font-semibold mb-2;
+}
+
+.question-text {
+  @apply text-xl mb-4;
+}
+
+.answer-section {
+  @apply flex flex-col space-y-2;
+}
+
+button {
+  @apply bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-200;
+}

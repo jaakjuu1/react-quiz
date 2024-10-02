@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "Are you considered to be a medium to large enterprise according to the definition Commission Recommendation 2003/361/EC (for example, employ more than 50 people, enjoy a turnover and/or annual balance sheet total of more than 10 million Euros)?",
+      "options": [
+        { "text": "Yes", "nextQuestion": 2 },
+        { "text": "No", "result": "NIS2 doesn't apply to you", "explanation": "If no, then most likely NIS2 does not apply to you, since this size cap rule has been introduced. There are several exceptions detailed in Article 2(2) of the Directive." }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Are you currently defined as a critical entity, based on the EU Directive on the resilience of critical entities (CER)?",
+      "options": [
+        { "text": "Yes", "result": "NIS2 applies to you", "explanation": "For the sake of this Directive, a critical entity is considered of particular European significance if it provides an essential service to six or more member states." },
+        { "text": "No", "nextQuestion": 3 }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Do you provide any of the following services?",
+      "options": [
+        { "text": "Trust services covered by Regulation (EU) No 910/2014 ('eIDAS Regulation')", "result": "NIS2 applies to you", "explanation": "If yes, then NIS2 applies to you unless these services are used exclusively within closed systems resulting from national law or from agreements between a defined set of participants." },
+        { "text": "Data center services such as storage, processing, transportation, operate IT and network equipment (for example as a Managed Services Provider), with facilities and infrastructure for power distribution and environmental control?", "result": "NIS2 applies to you", "explanation": "If this is the case, but you are not classified as per the cloud service definition according to ISO/IEC 17788:2014, then yes, NIS2 applies to you." },
+        { "text": "Manufacturing of basic pharmaceutical products and pharmaceutical preparations", "result": "NIS2 applies to you", "explanation": "If yes: Annex I of the directive specifies what sub-sectors in health are covered." },
+        { "text": "Top-level-domain (TLD) name servers, publicly available recursive domain name resolution services for Internet end-users, and authoritative domain name resolution services (DNS)?", "result": "NIS2 applies to you" },
+        { "text": "Services in one of the steps of the postal delivery chain: clearance, sorting or distribution, and pick-up service?", "result": "NIS2 applies to you" },
+        { "text": "Public electronic communications networks or publicly available electronic communications services?", "result": "NIS2 applies to you" },
+        { "text": "None of the above", "nextQuestion": 4 }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Are you part of any of the following industries?",
+      "options": [
+        { "text": "Manufacturing of goods such as medical devices, machinery and motor vehicles", "result": "NIS2 applies to you", "explanation": "If yes: Annex I of the directive specifies what sub-sectors in manufacturing are covered." },
+        { "text": "Aviation", "result": "NIS2 applies to you" },
+        { "text": "Financial sector (bank, insurance, investment)", "result": "NIS2 applies to you", "explanation": "If yes: the EU Digital Operational Resilience Act (DORA) requirements still takes precedence over NIS 2 (lex specialis)." },
+        { "text": "Healthcare", "result": "NIS2 applies to you" },
+        { "text": "None of the above", "result": "NIS2 doesn't apply to you" }
+      ]
+    }
+  ]
+}
